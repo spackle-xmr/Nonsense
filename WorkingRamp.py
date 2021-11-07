@@ -30,14 +30,14 @@ rampaddresses= 2**address_set_exponent
 next_set = 2
 #initial sender and receivers
 
-with open("S.txt", "r") as fp:
-    senders = json.load(fp)
-with open("R.txt", "r") as fp:
-    receivers = json.load(fp)
-with open("G.txt", "r") as fp:
-    generators = json.load(fp)
-with open("T.txt", "r") as fp:
-    timers = json.load(fp)
+#with open("S.txt", "r") as fp:
+#    senders = json.load(fp)
+#with open("R.txt", "r") as fp:
+#    receivers = json.load(fp)
+#with open("G.txt", "r") as fp:
+#    generators = json.load(fp)
+#with open("T.txt", "r") as fp:
+#    timers = json.load(fp)
 
 senders = [0]
 receivers = [rampaddresses/2]

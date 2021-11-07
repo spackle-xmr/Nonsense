@@ -4,7 +4,7 @@
 int main()
 {
   std::mt19937 rng(std::random_device{}());
-  rng.discard(700000);
+  rng.discard(500000);
   std::uniform_int_distribution<> window50(11, 60); // define the range
   std::gamma_distribution<double> distribution(19.28,(1/1.61));
 
@@ -19,8 +19,7 @@ int main()
   if(number < 10){ // #7821
     number = window50(rng);
   }
-  //core useful code
-    //int timerval = (int) number;
-    std::cout << number << std::endl;
+
+  std::cout << number << std::endl;
   return 0;
 }

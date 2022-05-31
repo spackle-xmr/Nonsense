@@ -39,9 +39,6 @@ def xfromy_ztm(yp): #Function receives integer y value, calculates x coordinate 
     if ((v*z**2) % q) == (-u % q):
         xp = z * pow(2,((q-1)//4), q) % q
 
-    print(b)
-    print(bin(xp)[-1])
-    
     if b != bin(xp)[-1]:
         return -xp % q
     else:
